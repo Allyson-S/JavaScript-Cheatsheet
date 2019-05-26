@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		// estruturas de repeticao
+
+		var j = 5, x = 0;
+		while(j <= 15) {
+
+			console.log("J = ",j);
+			j++;
+		}
+
+
+		//
+		for(i = 0; i < 10; i++) {
+			console.log('I = ',i);
+		}
+
+		//
+		do{
+			console.log('X = ',x);	
+			x++;
+		}while(x < j)
+
+
+		function exibirAlgo() {
+			console.log('Hello World');
+
+		} 
+
+		setInterval(exibirAlgo, 1000);
+		//metodo que exibi por um intervalo
+
+		setTimeOut(exibirAlgo, 500);
+		//metodo que gera delay na exibição
+	</script>
+</body>
+</html>

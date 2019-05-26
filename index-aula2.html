@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		//aula de condicionais 
+		
+		function retornaSexo(sexo) {
+			//Masculino = M - Feminino = F
+
+			if(sexo === 'M' || sexo === 'm') {
+				// int 1 == char '1' valido mesmo nao sendo mesmo tipo, === compara objetos de mesma tipagem 
+				// !== not ou diferente
+				return 'Masculino';
+			}else if(sexo === 'F' || sexo ==='f') { 
+				return 'Feminino';
+			}else {
+				return 'Nao Valido';
+			}
+		}
+
+		var sexo = retornaSexo('F');
+		console.log(sexo);
+
+		//mesma coisa que um if/else economizando codigo!!
+		function condicaoTernaria(sexo) {
+			return (sexo === 'M') ? 'Masculino' : 'Feminino';
+		}
+
+		var SEXO = condicaoTernaria('M');
+		console.log(SEXO)
+		/////////////
+
+		function treta(variavel) {
+			switch (variavel) {
+				
+				case 'biscoito': 
+					return 'EREJOTA';
+
+				case 'bolacha':
+					return 'SP';
+				
+
+				default:
+					return 'NGM SE IMPORTA';
+			} 
+		} 
+		
+		var treta1 = treta('bolacha');
+		console.log(treta1);
+	</script>
+</body>
+</html>
