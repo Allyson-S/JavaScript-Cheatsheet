@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lidando com Elementos e alterando estilos</title>
+</head>
+<body>
+	<div id="app"></div>
+
+	<script type="text/javascript">
+	// lidando com elementos 
+		var linkElement = document.createElement('a');
+
+		linkElement.setAttribute('href','http://www.google.com');
+		//insrindo um link 
+		var textElement = document.createTextNode('acessar site google');
+
+		linkElement.appendChild(textElement);
+
+		var containerElement = document.querySelector('#app');
+		containerElement.appendChild(linkElement);
+		//alterando estilos 
+
+		
+
+	</script>
+</body>
+</html> 
